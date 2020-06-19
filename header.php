@@ -100,7 +100,7 @@
                 <!-- social media links -->
                 <div id="block-joinweownit" class="block block-block-content block-block-contentd3f76424-d83d-4d01-8dd1-3d1cd897556f block-join-we-own-it">
 
-                    <div class="formattedText field fieldName-body fieldType-text-with-summary layout-fieldLabel-hidden field-item"><a href="/join">Join we own it</a>
+                    <div class="formattedText field fieldName-body fieldType-text-with-summary layout-fieldLabel-hidden field-item"><a href="https://weown.it/join">Join we own it</a>
                     </div>
 
                 </div>

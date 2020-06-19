@@ -60,6 +60,11 @@ article, aside, footer, header, nav, section {
     display: block;
 }
 
+.section-inner.medium {
+    max-width: 100rem;
+    padding-top: 20%;
+}
+
 @media (max-width: 1300px) {
     .layout-header {
         position: fixed !important;
@@ -955,6 +960,10 @@ ul.menu {
 
     .menu-footer > .menu > .menu-item {
         margin: 0 .3em;
+    }
+
+    .menu-footer > .menu > .menu-item a {
+        font-size: 16px;
     }
 }
 
