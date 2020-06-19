@@ -32,14 +32,28 @@
 
 		<header id="site-header" class="header-footer-group layout-header" role="banner">
             <div class="region region-header">
-            <div id="logo" class="block-site-branding">
-                    <span class="navbar-brand mainLogo"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" alt="brescia university college" width="251" height="91"></a></span>
-                    <button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="#mainNavs" aria-controls="mainNavs" aria-expanded="false" aria-label="Toggle Site Navigations">
-                        <span class="icon-bar b1"></span>  <span class="icon-bar b2"></span>  <span class="icon-bar b3"></span>
-                    </button>
-            </div>
+                <div id="block-woi-branding" class="block block-system block-system-branding-block block-site-branding">
 
-            <div class="navbar-collapse offcanvas-collapse" id="mainNavs">
+
+
+                    <div class="siteBranding">
+
+                        <div class="siteBranding-simpleLogo layout-smallOnly">
+                            <a href="/" title="We Own It" rel="home" class="siteBranding-logo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-mobile.svg" width="160" alt="Home">
+                            </a>
+                        </div>
+
+                        <div class="layout-largeOnly">
+                            <a href="/" title="We Own It" rel="home" class="siteBranding-logo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" alt="We Own It" class="siteBranding-logo-image" width="236">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            <div class="offcanvas-collapse navbar-ex1-collapse" id="mainNavs">
                 <nav aria-label="Main Site Navigation" class="ml-auto menu-main" id="mainNav">
                     <h2 class="visuallyHidden" id="block-woi-main-menu-menu">Main navigation</h2>
                   <?php /* Primary navigation */
@@ -84,6 +98,21 @@
 
                 </div>
                 <!-- social media links -->
+                <div id="block-joinweownit" class="block block-block-content block-block-contentd3f76424-d83d-4d01-8dd1-3d1cd897556f block-join-we-own-it">
+
+                    <div class="formattedText field fieldName-body fieldType-text-with-summary layout-fieldLabel-hidden field-item"><a href="/join">Join we own it</a>
+                    </div>
+
+                </div>
+
+                <div class="layout-smallOnly">
+                    <div class="icon-menu trigger-toggleMenuReveal navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <div class="icon-menu-bar"></div>
+                        <div class="icon-menu-bar"></div>
+                        <div class="icon-menu-bar"></div>
+                        <div class="icon-menu-bar"></div>
+                    </div>
+                </div>
 
 			<?php
 			// Output the search modal (if it is activated in the customizer).

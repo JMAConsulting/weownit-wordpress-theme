@@ -15,6 +15,39 @@
           } else {
               header.removeClass('navbar-fixed-top');
           }
+      });
+
+      $(".navbar-toggle").click(function () {
+          if ($('#mainNavs').hasClass('show')) {
+              $('body').removeClass('mainMenu-isExpanded');
+          }
+          else {
+              $('body').addClass('mainMenu-isExpanded');
+          }
+      });
+
+      /*$(".dropdown-toggle").click(function () {
+          if (!$(this).next('ul.dropdown-menu').hasClass('show')) {
+              $(this).next('ul.dropdown-menu').show();
+          }
+          else {
+              $(this).next('ul.dropdown-menu').hide();
+          }
+      }); */
+
+        $('.nav .dropdown').hover(function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+
+        }, function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+
         });
+
+        $('.nav .dropdown > a').click(function(){
+            location.href = this.href;
+        });
+
+
+
     });
 })(jQuery);
