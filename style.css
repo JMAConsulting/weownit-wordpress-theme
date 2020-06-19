@@ -60,7 +60,22 @@ article, aside, footer, header, nav, section {
     display: block;
 }
 
+@media (max-width: 1300px) {
+    .layout-header {
+        position: fixed !important;
+        top: 30px !important;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 400 !important;
+    }
+}
+
 @media (min-width: 1301px) {
+    .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+        max-width: 100rem !important;
+        width: calc(100% - 4rem) !important;
+    }
+
     #site-header {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -544,6 +559,28 @@ ul.menu {
     top: 22px;
 }
 
+.mainMenu-isExpanded .icon-menu-bar:nth-child(1) {
+    top: 9px;
+    width: 0;
+    left: 50%;
+}
+
+.mainMenu-isExpanded .icon-menu-bar:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.mainMenu-isExpanded .icon-menu-bar:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.mainMenu-isExpanded .icon-menu-bar:nth-child(4) {
+    top: 9px;
+    width: 0;
+    left: 50%;
+}
+
 .icon-menu-bar {
     position: absolute;
     height: 4px;
@@ -870,5 +907,66 @@ ul.menu {
 
 
 }
+
+@media (max-width: 1100px) {
+    .layout-footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .layout-footer .region-footer {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .block-footer-logo {
+        position: relative;
+        left: auto;
+        -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+        order: 0;
+        margin-bottom: 1rem;
+    }
+
+    .block-footer-logo .fieldName-body > a {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+
+    .menu-footer > .menu > .menu-item {
+        margin-right: 1rem;
+        margin-left: 1em;
+    }
+
+    .menu-footer > .menu {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .layout-footer {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .menu-footer > .menu > .menu-item {
+        margin: 0 .3em;
+    }
+}
+
+@media (max-width: 375px) {
+    .menu-footer > .menu {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+
 
 /* Mobile CSS */
